@@ -27,7 +27,7 @@ const tMap =  transform               =>
   
 const isLarge                = obj => obj.size > 4  
 const toUpperCase            = obj => obj.toUpperCase()
-const getConfigurationStatus = obj => obj.status == 1 ? 
+const getConfigurationStatus = obj => obj.status ? 
                                         `${obj.name} is built` :
                                         `${obj.name} is initiated`
 const largeConfigurationTransducer  = tFilter(isLarge) 
